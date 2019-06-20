@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+
+	<title>Burger House</title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, address, phone, icons" />
+
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+
+
+  	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+	  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <link href="fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet"> 
+	  <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+
+
+</head>
+
+<body>
+<div class="my-navbar">
+  <div class="container-fluid">
+    <div class="navbar">
+
+      <a class="navbar-brand brand" href="index.html">Burger House</a>
+
+
+       			
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <a href="#menu-list">Menu</a>
+			<a href="reservation.html">Reservations</a>
+			<a href="#info">Info</a>
+			
+          </div>
+          <!-- Use any element to open the sidenav -->
+
+		  <span class="right-cart"><i class="fas fa-shopping-cart"></i></span>
+          <span onclick="openNav()" class="pull-right nav-icon">☰</span>
+
+           <div class="container cart">
+          	<div class="arrow-up"></div>
+	          	<div class="shopping-cart">
+	          		<div class="shopping-cart-header">
+	          			<i class="fas fa-shopping-cart cart-icon"></i>
+	          			<div class="shopping-cart-total">
+					        <span class="lighter-text">Total:<p id="price"></p></span>
+					    </div>
+
+
+	          		</div>
+	          		<hr style="width:80%;">
+	          		<div class="shopping-cart-content">
+	          			<div class="shopping-cart-items" id="cart-items">
+	          				<div class="parent" id="demo"></div>
+	          			</div>
+	          		</div>	
+	          	</div>
+          </div> <!--end of cart-->
+
+
+
+
+        
+    </div>
+    
+  </div>
+</div>
+
+
+         
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2" id="brgf">
+				<span class="menu-heading">Burgers</span>
+				<img src="img/Burger00.png" class="menu-show" />
+			</div>
+
+			<div class="col-sm-2" id="anf">	
+				<span class="menu-heading">Fries</span>
+				<img src="img/fries01.png" class="menu-show" />
+			</div>
+
+			<div class="col-sm-2" id="coff">
+				<span class="menu-heading">Coffee</span>
+				<img src="img/cappuccino.png" class="menu-show" />
+			</div>
+
+			<div class="col-sm-2" id="bvrg">
+				<span class="menu-heading">Beverages</span>
+				<img src="img/beverages01.png" class="menu-show" />
+			</div>
+
+
+			<div class="col-sm-2" id="piz">
+				<span class="menu-heading">Pizzas</span>
+				<img src="img/pizza01.png" class="menu-show"/>
+			</div>
+
+
+		</div>
+
+		
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="container" id="brg"><hr>		<!--Burgers--> 
+	<h1 style="text-align: center;font-family: Verdana,sans-serif; color: black;">Burgers<i class="fas fa-hamburger"></i></h1>
+		<div class="row food-items" id="fstbrg">
+			<div class="col-sm-4" onclick="add(this);"><h3>Cheese  HamBurger</h3><img src="img/burger01.png"/><span class="hidden-price">300/-</span></div>
+			<div class="col-sm-4" onclick="add(this);"><h3>Veggie  Mayo Burger</h3><img src="img/burger03.png"/><span class="hidden-price">300/-</span></div>
+			<div class="col-sm-4"><h3>Grilled Chicken Burger</h3><img src="img/burger04.png"/></div>
+		</div>
+		<div class="row food-items">
+			<div class="col-sm-4"><h3>Cheese Chicken Burger</h3><img src="img/burger05.png"/></div>
+			<div class="col-sm-4"><h3>Chicken Mayo Burger</h3><img src="img/burger06.png"/></div>
+			<div class="col-sm-4"><h3>Veggie Aloo Burger</h3><img src="img/burger07.png"/></div>
+		</div>
+
+		<div class="row food-items">
+			<div class="col-sm-4"><h3>Veg Burger</h3><img src="img/burger08.png"/></div>
+			<div class="col-sm-4"><h3>Big Burger Meal</h3><img src="img/burger09.png"/></div>
+			
+		</div>
+	</div>
+
+
+
+
+	<div class="container" id="Frs">		<!--French Fries-->
+	<hr>
+		<h1 style="text-align: center;font-family: Verdana,sans-serif; color: black;">French Fries<i class="fas fa-utensils"></i></h1>
+		<div class="row food-items">
+			<div class="col-sm-4"><h3>Crisp Fries</h3><img src="img/fries02.png"/></div>
+			<div class="col-sm-4"><h3>Cheese Fries</h3><img src="img/fries03.png"/></div>
+			<div class="col-sm-4"><h3>Crinkle Fries</h3><img src="img/fries04.png"/></div>
+		</div>
+	</div>
+
+
+	<div class="container" id="Coffee">		<!--Coffee-->
+	<hr>
+		<h1 style="text-align: center;font-family: Verdana,sans-serif; color: black;">Coffee<i class="fas fa-coffee"></i></h1>
+		<div class="row food-items">
+			<div class="col-sm-4"><h3>Black Coffee</h3><img src="img/coffee01.png"/></div>
+			<div class="col-sm-4"><h3>Cold Coffee</h3><img src="img/coffee02.png"/></div>
+			<div class="col-sm-4"><h3>Cappuccino</h3><img src="img/coffee03.png"/></div>
+		</div>
+	</div>
+
+
+	<div class="container" id="bvrgs">		<!--Beverages-->
+	<hr>
+		<h1 style="text-align: center;font-family: Verdana,sans-serif; color: black;">Beverages/Shakes  <i class="fas fa-beer"></i></h1>
+		<div class="row food-items">
+			<div class="col-sm-4"><h3>Pepsi 250 ml</h3><img src="img/beverages01.png"/></div>
+			<div class="col-sm-4"><h3>Coca Cola 250 ml</h3><img src="img/drinks01.png"/></div>
+			<div class="col-sm-4"><h3>Chocolate Smoothie</h3><img src="img/drinks02.png"/></div>
+		</div>
+
+		<div class="row food-items">
+			<div class="col-sm-4"><h3>Strawberry smoothie</h3><img src="img/drinks03.png"/></div>
+			<div class="col-sm-4"><h3>Vanilla smoothie</h3><img src="img/drinks04.png"/></div>
+		
+		</div>
+	</div>
+
+
+
+
+	<div class="container" id="pizza">		<!--Pizza-->
+	<hr>
+		<h1 style="text-align: center;font-family: Verdana,sans-serif; color: black;">Pizza<i class="fas fa-pizza-slice"></i></h1>
+		<div class="row food-items">
+			<div class="col-sm-4"><h3>Pepperoni Pizza</h3><img src="img/pizza02.png"/></div>
+			<div class="col-sm-4"><h3>Pizza Margherita</h3><img src="img/pizza03.png"/></div>
+			<div class="col-sm-4"><h3>Cheese Pizza</h3><img src="img/pizza04.png"/></div>
+		</div>
+	</div>
+	
+	
+	
+	
+
+
+
+
+<!--end of content-->
+
+<footer class="footer text-center" id="info">
+    <div class="footer-top">
+        <div class="col-md-offset-3 col-md-6 text-center">
+          <div class="widget">
+            <h4 class="widget-title">Burger House</h4>
+            <address>AZAD NAGAR<br>Andheri, Mumbai-400061</address>
+            <div class="social-list">
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+           
+            </div>
+            <p class="copyright clear-float">
+              ©Burger House. All Rights Reserved
+              <div class="credits">
+                <!--
+                 all rights are reserved
+                -->
+              
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- / footer -->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+
+</body>			
+
+</html>	

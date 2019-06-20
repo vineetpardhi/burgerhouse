@@ -1,0 +1,214 @@
+
+.brand
+{
+	    font-family: 'Satisfy', sans-serif;
+		color: #FFB03B;
+		font-size: 30px;
+		margin-top:10px;
+		margin-left: 20px;
+}
+.brand:hover
+{
+	color:black;
+}
+.my-navbar
+{
+	display: block;
+	width: 100%;
+	height: 75px;
+	background-color: #F5F5F5;
+	border:0px solid black;
+	border-bottom-style: groove;
+
+
+
+}
+
+.nav-icon
+{
+
+
+	color:black;
+    font-size: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.menu-show
+{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	
+	margin:20px 10px 30px 94px;
+
+}
+.menu-show:hover
+{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+.ad-show
+{
+	background:url('img/background-brick-wall.jpg');   background-repeat: no-repeat;
+ background-size: 2000px 300px;
+}
+.show-heading
+{
+position: relative;
+left: 20px;
+margin: px;	
+}
+.menu-heading
+{
+font-family: Geneva,Tahoma,Verdana,sans-serif; 
+color:black;
+font-size: 20px;
+	position: static;
+		margin:20px 10px 30px 95px;
+	padding: 19px;
+}
+
+#Frs
+{
+	display: none;
+}
+
+.food-items
+{
+	cursor: pointer;
+}
+.food-items img
+{
+	height: 300px;
+	width: 300px;
+}
+.food-items h3
+{
+		font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+		position: relative;
+		color: #696969;
+		margin-left:50px;
+		padding-left: 5px;
+}
+#Coffee
+{
+	display: none;
+}
+#bvrgs
+{
+	display: none;
+}
+#pizza
+{
+	display: none;
+}
+#shop
+{
+	display: none;
+}
+.right-cart
+{
+	clear: both;
+	position: absolute;
+	color:#FFB03B;
+	cursor: pointer;
+	font-size: 20px;
+	right: 100px;
+	top:20px;
+}
+
+.cart 
+{
+	display: none;
+}
+
+.shopping-cart {
+
+	position: absolute;
+	width: 300px;
+	z-index: 2;
+	background:#fff;
+	right: 0;
+	top:60px;
+  	border-radius: 10px;
+
+  	
+  }
+
+
+
+
+
+
+.shopping-cart-header {
+        padding-bottom: 15px;
+        height: 50px;
+
+}
+    
+.shopping-cart-total {
+     
+      position:absolute;
+      right:40px;
+      top:5px;
+    }
+
+
+.lighter-text {
+  color: #ABB0BE;
+}
+
+
+.cart-icon {
+  color:#FFB03B ;
+  font-size: 20px;
+  
+  float: left;
+  position: relative;
+  left:10px;
+  top:5px;
+}
+.arrow-up
+{
+width: 0;
+height: 0;
+position: absolute;
+
+border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #fff;
+
+right:95px;	
+top:50px;
+}
+
+.shopping-cart-content{
+
+}
+.shopping-cart-item{
+	width: 290px;
+	align-content: center;
+	height: 200spx;
+
+}
+
+#demo h3{
+font-size: 0.8em;
+font-weight: bold;
+
+
+}
+.shopping-cart-item:after{
+	border-bottom-style: groove;
+}
+
+#demo img
+{
+	height: 50px;
+	width:50px;
+	float: left;
+}
+.hidden-price
+{
+	display: none;
+}
