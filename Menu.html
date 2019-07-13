@@ -45,7 +45,11 @@
           </div>
           <!-- Use any element to open the sidenav -->
 
-		  <span class="right-cart"><i class="fas fa-shopping-cart"></i></span>
+		  <span class="right-cart"><i class="fas fa-shopping-cart"></i> 
+		  	<div class="badge">
+		  		<span id="itm-in-cart"></span>
+		  	</div>
+		  </span>
           <span onclick="openNav()" class="pull-right nav-icon">☰</span>
 
            <div class="container cart">
@@ -54,17 +58,26 @@
 	          		<div class="shopping-cart-header">
 	          			<i class="fas fa-shopping-cart cart-icon"></i>
 	          			<div class="shopping-cart-total">
-					        <span class="lighter-text">Total:<p id="price"></p></span>
+					        <span class="lighter-text">Total:<span id="price"></span>&#8377;</span>
 					    </div>
 
 
 	          		</div>
 	          		<hr style="width:80%;">
 	          		<div class="shopping-cart-content">
+	          			<p class="empty-cart-p">Looks like you're not hungry</p>
 	          			<div class="shopping-cart-items" id="cart-items">
-	          				<div class="parent" id="demo"></div>
+	          				
+	          				<div id="demo">
+	          				
+	          				</div>
+	          				
 	          			</div>
 	          		</div>	
+	          		<hr style="width:80%;">
+		          		<div class="foot-cart">
+		          			<a href="payment pages/main_pay.html"><input type="button" class="btn btn-success" id="chk-btn" value="Checkout"/></a>
+		          		</div>
 	          	</div>
           </div> <!--end of cart-->
 
@@ -129,19 +142,19 @@
 	<div class="container" id="brg"><hr>		<!--Burgers--> 
 	<h1 style="text-align: center;font-family: Verdana,sans-serif; color: black;">Burgers<i class="fas fa-hamburger"></i></h1>
 		<div class="row food-items" id="fstbrg">
-			<div class="col-sm-4" onclick="add(this);"><h3>Cheese  HamBurger</h3><img src="img/burger01.png"/><span class="hidden-price">300/-</span></div>
-			<div class="col-sm-4" onclick="add(this);"><h3>Veggie  Mayo Burger</h3><img src="img/burger03.png"/><span class="hidden-price">300/-</span></div>
-			<div class="col-sm-4"><h3>Grilled Chicken Burger</h3><img src="img/burger04.png"/></div>
+			<div class="col-sm-4" onclick="add(this);"><i class="fas fa-times-circle remove-item"></i><h3>Cheese  HamBurger</h3><img src="img/burger01.png"/><span class="hidden-price">300/-</span></div>
+			<div class="col-sm-4" onclick="add(this);"><i class="fas fa-times-circle remove-item"></i><h3>Veggie  Mayo Burger</h3><img src="img/burger03.png"/><span class="hidden-price">300/-</span></div>
+			<div class="col-sm-4" onclick="add(this);"><i class="fas fa-times-circle remove-item"></i><h3>Grilled Chicken Burger</h3><img src="img/burger04.png"/><span class="hidden-price">300/-</span></div>
 		</div>
 		<div class="row food-items">
-			<div class="col-sm-4"><h3>Cheese Chicken Burger</h3><img src="img/burger05.png"/></div>
-			<div class="col-sm-4"><h3>Chicken Mayo Burger</h3><img src="img/burger06.png"/></div>
-			<div class="col-sm-4"><h3>Veggie Aloo Burger</h3><img src="img/burger07.png"/></div>
+			<div class="col-sm-4" onclick="add(this);"><i class="fas fa-times-circle remove-item"></i><h3>Cheese Chicken Burger</h3><img src="img/burger05.png"/><span class="hidden-price">300/-</span></div>
+			<div class="col-sm-4"  onclick="add(this);"><i class="fas fa-times-circle remove-item"></i><h3>Chicken Mayo Burger</h3><img src="img/burger06.png"/><span class="hidden-price">300/-</span></div>
+			<div class="col-sm-4"  onclick="add(this);"><i class="fas fa-times-circle remove-item"></i><h3>Veggie Aloo Burger</h3><img src="img/burger07.png"/><span class="hidden-price">300/-</span></div>
 		</div>
 
 		<div class="row food-items">
-			<div class="col-sm-4"><h3>Veg Burger</h3><img src="img/burger08.png"/></div>
-			<div class="col-sm-4"><h3>Big Burger Meal</h3><img src="img/burger09.png"/></div>
+			<div class="col-sm-4" onclick="add(this);"><i class="fas fa-times-circle remove-item"></i><h3>Veg Burger</h3><img src="img/burger08.png"/><span class="hidden-price">300/-</span></div>
+			<div class="col-sm-4"  onclick="add(this);"><i class="fas fa-times-circle remove-item"></i><h3>Big Burger Meal</h3><img src="img/burger09.png"/><span class="hidden-price">300/-</span></div>
 			
 		</div>
 	</div>
@@ -153,9 +166,9 @@
 	<hr>
 		<h1 style="text-align: center;font-family: Verdana,sans-serif; color: black;">French Fries<i class="fas fa-utensils"></i></h1>
 		<div class="row food-items">
-			<div class="col-sm-4"><h3>Crisp Fries</h3><img src="img/fries02.png"/></div>
-			<div class="col-sm-4"><h3>Cheese Fries</h3><img src="img/fries03.png"/></div>
-			<div class="col-sm-4"><h3>Crinkle Fries</h3><img src="img/fries04.png"/></div>
+			<div class="col-sm-4" onclick="add(this);"><i class="fas fa-times-circle remove-item"></i><h3>Crisp Fries</h3><img src="img/fries02.png"/><span class="hidden-price">90/-</span></div>
+			<div class="col-sm-4" onclick="add(this);"><i class="fas fa-times-circle remove-item"></i><h3>Cheese Fries</h3><img src="img/fries03.png"/><span class="hidden-price">150/-</span></div>
+			<div class="col-sm-4" onclick="add(this);"><i class="fas fa-times-circle remove-item"></i><h3>Crinkle Fries</h3><img src="img/fries04.png"/><span class="hidden-price">120/-</span></div>
 		</div>
 	</div>
 
