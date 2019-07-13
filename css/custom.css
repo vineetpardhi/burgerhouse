@@ -195,6 +195,9 @@ top:50px;
 #demo h3{
 font-size: 0.8em;
 font-weight: bold;
+position: relative;
+left: 20px;
+top: 0px;
 
 
 }
@@ -206,9 +209,56 @@ font-weight: bold;
 {
 	height: 50px;
 	width:50px;
-	float: left;
+	position: relative;
+	left:20px;
+	top:10px;
+	margin-left: 10px;
+
+
 }
 .hidden-price
 {
 	display: none;
+}
+
+.badge {
+    background-color: #FFB03B;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    padding: 3px 7px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.foot-cart
+{
+	
+	padding: 10px 20px 10px 20px; 
+	text-align:center;
+}
+#chk-btn
+{
+	display: none;
+}
+.remove-item
+{
+	display: none;
+
+	float: left;
+	margin-left: 10px;
+	padding-top: 50px;
+	margin-top: 15px;
+
+}
+.empty-cart-p
+{
+	text-align: center;
+	font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+	font-size: 18px;
+	color:#FFB03B;
+
 }
