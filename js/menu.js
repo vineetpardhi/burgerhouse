@@ -80,21 +80,78 @@ $(document).ready(function()
 	
 });
 var Total=0;
+
+var counter=0;
+document.getElementById("itm-in-cart").innerHTML=counter;
+
 function add($p1)
 {
 
-	
-	var item=$p1;
-	var cln=item.cloneNode(true);
-	var cloneNode=document.getElementById("demo").appendChild(cln);
-	$("<br>").insertAfter(cloneNode);
-	cloneNode.onclick=null;
-	$("#demo .hidden-price").show().css('position','absolute').css('left','250px').css('float','right');
-	Total=Total+parseInt($("#demo .hidden-price").html());
-	document.getElementById("price").innerHTML=Total;
+		if(counter<=3)
+		{
+				counter++;	
+			
+					
+				
+					
+					
+				
+				
+
+				var item=$p1;
+				var cln=item.cloneNode(true);
+				var cloneNode=document.getElementById("demo").appendChild(cln);
+				
+				var item_price=$p1.getElementsByTagName('span')[0].innerHTML;
+				
+				
+				Total=Total+parseInt(item_price);
+				document.getElementById("price").innerHTML=Total;
+				
+				cloneNode.onclick=null;
+				$(".shopping-cart-items").addClass("container");
+				$("#demo div").removeClass("col-sm-4").addClass("row fd-item");
+
+				$("#demo div .remove-item").show();
+
+				$("#demo div .hidden-price").show().css('position','absolute').css('left','250px').css('top','10');
+				
+				$(".remove-item").click(function()
+					{
+						$(this).parent().remove();
+						counter--;
+						var rem_price=$(this).parent().find('span').html();
+						Total=Total-parseInt(rem_price);
+						document.getElementById("itm-in-cart").innerHTML=counter;
+							document.getElementById("price").innerHTML=Total;
+					
+					});
+
+			
+				
+			
+				
+			
+				if(counter!=0)
+				{
+				$("#chk-btn").show("slow");
+				$(".empty-cart-p").hide();
+				}
+				else
+				{
+				$("#chk-btn").hide();
+				$(".empty-cart-p").show();
+				}
+			}
+			else
+			{
+				alert("Only 4 Orders allowed, decide the quantity while checking out");
+				exit();
+			}
+			
+			document.getElementById("itm-in-cart").innerHTML=counter;
+		
 }
-
-
 
 
 
